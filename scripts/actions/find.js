@@ -6,15 +6,23 @@
  * @param {string} toFind - the value to find in the array
  * @returns {boolean} does the value exist or not?
  */
+// const isItThere = (arrOfStrings, toFind) => {
+//   let exists = false;
+//  if (arrOfStrings.indexOf(toFind) > -1)
+//     exists = true;
+//   return exists;
+// };
+
+// Alternatively
 const isItThere = (arrOfStrings, toFind) => {
   let exists = false;
-  for (let _ of _) {
-
-  }
+ for (const value of arrOfStrings) {
+    if (value === toFind) {
+      exists = true;
+    }
+ }
   return exists;
 };
-
-
 
 
 // test the function (all the tests work!)
